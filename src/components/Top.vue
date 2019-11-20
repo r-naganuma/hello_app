@@ -30,9 +30,9 @@
 export default {
   name: 'main',
   data: {
-      profile: '/profile',
-      skills: '/skills',
-      outputs: '/outputs'
+      profile: '/hello_app/profile',
+      skills: '/hello_app/skills',
+      outputs: '/hello_app/outputs'
   },
   mounted: function() {
     $('.main a').hover(

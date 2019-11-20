@@ -16,12 +16,12 @@ export default new Router({
       component: Top
     },
 	{
-	  path: '/profile',
+	  path: '/hello_app/profile',
 	  name: 'Profile',
 	  component: Profile
 	},
 	{
-	  path: '/outputs',
+	  path: '/hello_app/outputs',
 	  name: 'Output',
 	  component: Output
 	}

@@ -23,10 +23,10 @@ export default {
   data () {
     return {
       items: [
-        { title: 'top', path: '/' },
-        { title: 'profile', path: '/profile' },
-        { title: 'skills', path: '/skills' },
-        { title: 'outputs', path: '/outputs' }
+        { title: 'top', path: '/hello_app' },
+        { title: 'profile', path: '/hello_app/profile' },
+        { title: 'skills', path: '/hello_app/skills' },
+        { title: 'outputs', path: '/hello_app/outputs' }
       ]
     }
   }
