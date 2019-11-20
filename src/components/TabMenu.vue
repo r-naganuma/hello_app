@@ -2,7 +2,7 @@
   <div class="header">
     <div class="header_name">
       <h1>
-        <router-link v-bind:to="{ path: '/' }">Ryo Naganuma</router-link>
+        <router-link v-bind:to="{ path: '/hello_app' }">Ryo Naganuma</router-link>
       </h1>
     </div>
     <div class="header_menu">
