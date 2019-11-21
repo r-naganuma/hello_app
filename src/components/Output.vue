@@ -1,7 +1,7 @@
 <template>
   <div class="output">
     <h2 v-observe-visibility="{callback: visibilityChanged, once: true}" v-bind:class='{active:isVisible}' class="fade_in">OUTPUTS</h2>
-    <div v-observe-visibility="{callback: visibilityChanged, once: true, throttle: 2000}" v-bind:class='{active:isVisible}' class="output_box fade_bottom">
+    <div v-observe-visibility="{callback: visibilityChanged, once: true, throttle: 2000, throttleOptions: {leading: 'hidden'}}" v-bind:class='{active:isVisible}' class="output_box fade_bottom">
       <div class="content" v-for="i in 6" :key=i>
         <h3> {{ name }} </h3>
         <img src="/hello_app/images/3.jpg">

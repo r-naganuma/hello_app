@@ -1,12 +1,12 @@
 <template>
-  <div class="profile">
-    <h2 v-observe-visibility="{callback: visibilityChanged, once: true}" v-bind:class='{active:isVisible}' class="fade_in">PROFILE</h2>
+  <div class="skills">
+    <h2 v-observe-visibility="{callback: visibilityChanged, once: true}" v-bind:class='{active:isVisible}' class="fade_in">SKILLS</h2>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Profile',
+  name: 'Skills',
   data () {
     return {
       isVisible: false
