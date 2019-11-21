@@ -1,26 +1,12 @@
 <template>
   <div class="main">
     <ul>
-      <li v-observe-visibility="visibilityChanged" v-bind:class='{active:isVisible}'>
-        <a href="profile">
+      <li v-observe-visibility="visibilityChanged" v-bind:class='{active:isVisible}' v-for="(item, index) in items" :key=index>
+         <router-link v-bind:to=item.path>
           <div class="mask">
-            <p>profile</p>
+            <p>{{ item.title }}</p>
           </div>
-        </a>
-      </li>
-      <li v-observe-visibility="visibilityChanged" v-bind:class='{active:isVisible}'>
-        <a href="skills">
-          <div class="mask">
-            <p>skills</p>
-          </div>
-        </a>
-      </li>
-      <li v-observe-visibility="visibilityChanged" v-bind:class='{active:isVisible}'>
-        <a href="outputs">
-          <div class="mask">
-            <p>outputs</p>
-          </div>
-        </a>
+         </router-link>
       </li>
     </ul>
   </div>
@@ -29,11 +15,6 @@
 <script>
 export default {
   name: 'main',
-  data: {
-      profile: '/hello_app/profile',
-      skills: '/hello_app/skills',
-      outputs: '/hello_app/outputs'
-  },
   mounted: function() {
     $('.main a').hover(
       function() {
@@ -50,7 +31,12 @@ export default {
   },
   data(){
       return {
-        isVisible: true
+        isVisible: false,
+        items: [
+          { title: 'PROFILE', path: '/hello_app/profile' },
+          { title: 'SKILLS', path: '/hello_app/skills' },
+          { title: 'OUTPUTS', path: '/hello_app/outputs' }
+        ]
       }
   },
   methods: {
