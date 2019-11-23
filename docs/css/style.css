@@ -155,7 +155,7 @@ input, select {
 *    All
 /*==================================================================*/
 #app {
-  width: 1100px;
+  width: 100%;
   margin: 0 auto;
   font-family: 'Noto Sans JP', "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   color: #333333;
@@ -183,9 +183,10 @@ input, select {
     width: 100%;
     display: block; }
   #app h2 {
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
     letter-spacing: 0.15em;
     margin-bottom: 50px; }
   #app .header {
@@ -198,7 +199,8 @@ input, select {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 50px; }
+    width: 1100px;
+    margin: 0 auto 50px; }
     #app .header_name h1 {
       font-family: 'Staatliches', cursive;
       font-size: 20px;
@@ -226,7 +228,9 @@ input, select {
             -webkit-animation: menuline 0.2s ease-in 0s both;
             animation: menuline 0.2s ease-in 0s both; }
   #app .main {
-    height: 480px; }
+    height: 480px;
+    width: 1100px;
+    margin: 0 auto; }
     #app .main ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -311,31 +315,92 @@ input, select {
               right: 0;
               margin: auto;
               text-align: center; }
-  #app .output_box {
+  #app .profile_box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-    #app .output_box .content {
-      background-color: #f6f6f6;
-      width: 31%;
-      padding: 15px;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      margin-bottom: 30px; }
-      #app .output_box .content h3 {
-        text-align: center;
+    width: 1100px;
+    margin: 0 auto 50px; }
+    #app .profile_box--pic {
+      width: 480px; }
+    #app .profile_box--txt {
+      width: 550px; }
+      #app .profile_box--txt .profileTtl {
         font-size: 14px;
         font-weight: bold;
         margin-bottom: 10px;
         line-height: 1; }
-      #app .output_box .content p {
-        text-align: left;
-        margin-top: 10px; }
+  #app .profile_about {
+    background: #f3f5f8;
+    padding: 50px 0; }
+    #app .profile_about--ttl {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+      text-align: center;
+      font-size: 18px;
+      letter-spacing: 0.1em;
+      margin-bottom: 50px; }
+    #app .profile_about--box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 1100px;
+      margin: 0 auto; }
+      #app .profile_about--box .aboutList {
+        width: 32%; }
+        #app .profile_about--box .aboutList img {
+          width: 60px;
+          margin: 0 auto 20px; }
+        #app .profile_about--box .aboutList_ttl {
+          position: relative;
+          font-size: 16px;
+          text-align: center;
+          margin-bottom: 50px;
+          letter-spacing: 0.1em; }
+          #app .profile_about--box .aboutList_ttl::after {
+            content: "";
+            position: absolute;
+            bottom: -25px;
+            left: 0;
+            right: 0;
+            width: 55px;
+            height: 2px;
+            background: #7c203f;
+            margin: auto; }
+  #app .output {
+    width: 1100px;
+    margin: 0 auto; }
+    #app .output_box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      #app .output_box .content {
+        background-color: #f6f6f6;
+        width: 31%;
+        padding: 15px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-bottom: 30px; }
+        #app .output_box .content h3 {
+          text-align: center;
+          font-size: 14px;
+          font-weight: bold;
+          margin-bottom: 10px;
+          line-height: 1; }
+        #app .output_box .content p {
+          text-align: left;
+          margin-top: 10px; }
   #app .footer {
     margin-top: 60px; }
     #app .footer p {
